@@ -1,48 +1,96 @@
-# Informações do site
+# =====================================
+# Configuração do SustainaTrip Blog
+# =====================================
+
+# Nome do site
 name: SustainaTrip
 
-description: Blog sobre turismo sustentável, viagens e experiências.
+# Descrição do site
+description: Blog sobre turismo sustentável, viagens e experiências pelo mundo.
 
+# Imagem do perfil/logo
 avatar: /images/avatar.png
 
+
+# =====================================
 # Redes sociais
+# =====================================
+
 footer-links:
   github: sustainatrip
   instagram:
   facebook:
+  linkedin:
+  youtube:
   email:
 
-# Comentários (opcional)
+
+# =====================================
+# Comentários
+# =====================================
+
 disqus:
 
-# Google Analytics (opcional)
+
+# =====================================
+# Google Analytics
+# =====================================
+
 google_analytics:
 
-# Configuração do GitHub Pages
-url: https://sustainatrip.github.io
+
+# =====================================
+# GitHub Pages
+# =====================================
+
+url: "https://sustainatrip.github.io"
 baseurl: "/blog"
 
+
+# =====================================
 # Posts
+# =====================================
+
 permalink: /:title/
 
-# Versão do Jekyll Now
+
+# =====================================
+# Jekyll Now
+# =====================================
+
 version: v1.2.0
 
+
+# =====================================
 # Markdown
+# =====================================
+
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+
+# =====================================
 # CSS
+# =====================================
+
 sass:
   style: :expanded
 
-# Plugins
+
+# =====================================
+# Plugins GitHub Pages
+# =====================================
+
 plugins:
   - jekyll-sitemap
   - jekyll-feed
 
-# Arquivos ignorados
+
+# =====================================
+# Exclusões
+# =====================================
+
 exclude:
   - Gemfile
   - Gemfile.lock
