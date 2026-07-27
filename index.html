@@ -1,18 +1,83 @@
 ---
 layout: default
+title: Início
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<section class="hero">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <div class="hero-content">
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+        <h1>Descubra o mundo de forma mais sustentável.</h1>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+        <p>
+            Histórias, destinos, cultura, natureza e experiências
+            para quem acredita que viajar pode transformar pessoas e lugares.
+        </p>
+
+        <a href="#posts" class="btn">
+            Explorar artigos
+        </a>
+
+    </div>
+
+</section>
+
+<section id="posts" class="posts-section">
+
+    <h2>Últimos artigos</h2>
+
+    <div class="posts-grid">
+
+        {% for post in site.posts %}
+
+        <article class="post-card">
+
+            {% if post.image %}
+                <a href="{{ post.url | relative_url }}">
+                    <img
+                        src="{{ post.image | relative_url }}"
+                        alt="{{ post.title }}">
+                </a>
+            {% endif %}
+
+            <div class="post-content">
+
+                <span class="category">
+                    {{ post.category }}
+                </span>
+
+                <h3>
+                    <a href="{{ post.url | relative_url }}">
+                        {{ post.title }}
+                    </a>
+                </h3>
+
+                <small>
+                    {{ post.date | date: "%d de %B de %Y" }}
+                </small>
+
+                <p>
+
+                    {{ post.excerpt
+                        | strip_html
+                        | truncate: 180 }}
+
+                </p>
+
+                <a
+                    class="read-more"
+                    href="{{ post.url | relative_url }}">
+
+                    Continuar lendo →
+
+                </a>
+
+            </div>
+
+        </article>
+
+        {% endfor %}
+
+    </div>
+
+</section>
