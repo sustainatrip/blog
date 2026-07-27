@@ -1,98 +1,29 @@
-# =====================================
-# Configuração do SustainaTrip Blog
-# =====================================
+title: SustainaTrip
+email: contato@sustainatrip.com
+description: >
+  Blog sobre turismo sustentável, viagens, cultura e experiências.
 
-# Nome do site
-name: SustainaTrip
+url: "https://seudominio.com"
+baseurl: ""
 
-# Descrição do site
-description: Blog sobre turismo sustentável, viagens e experiências pelo mundo.
+lang: pt-BR
+timezone: America/Sao_Paulo
 
-# Imagem do perfil/logo
-avatar: /images/avatar.png
+markdown: kramdown
+highlighter: rouge
 
-
-# =====================================
-# Redes sociais
-# =====================================
-
-footer-links:
-  github: sustainatrip
-  instagram:
-  facebook:
-  linkedin:
-  youtube:
-  email:
-
-
-# =====================================
-# Comentários
-# =====================================
-
-disqus:
-
-
-# =====================================
-# Google Analytics
-# =====================================
-
-google_analytics:
-
-
-# =====================================
-# GitHub Pages
-# =====================================
-
-url: "https://sustainatrip.github.io"
-baseurl: "/blog"
-
-
-# =====================================
-# Posts
-# =====================================
-
-permalink: /:title/
-
-
-# =====================================
-# Jekyll Now
-# =====================================
-
-version: v1.2.0
-
-
-# =====================================
-# Markdown
-# =====================================
-
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-
-
-# =====================================
-# CSS
-# =====================================
-
-sass:
-  style: :expanded
-
-
-# =====================================
-# Plugins GitHub Pages
-# =====================================
+permalink: /blog/:title/
 
 plugins:
-  - jekyll-sitemap
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
+collections: {}
 
-# =====================================
-# Exclusões
-# =====================================
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
