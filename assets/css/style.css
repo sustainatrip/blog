@@ -285,35 +285,36 @@ article img{
    RESPONSIVO
    ========================================================== */
 
-@media (max-width:900px){
+@media (max-width: 768px){
 
-.site-header .container{
+    .site-header .container{
+        min-height: 60px;
+        padding: 10px 16px;
+        gap: 12px;
+    }
 
-    flex-direction:column;
+    .logo img{
+        height: 40px;
+    }
 
-    padding:20px 0;
+    .site-brand h1{
+        font-size: 1.2rem;
+    }
 
-}
+    .site-brand p{
+        display: none; /* Oculta a descrição no celular */
+    }
 
-.main-nav{
+    .main-nav{
+        gap: 14px;
+        font-size: .95rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-}
-
-.site-brand{
-
-    text-align:center;
-
-}
-
-.post{
-
-    padding:25px;
-
-}
+    main{
+        padding-top: 30px;
+    }
 
 }
 /* ==========================
