@@ -281,42 +281,7 @@ article img{
 
 }
 
-/* ==========================================================
-   RESPONSIVO
-   ========================================================== */
 
-@media (max-width: 768px){
-
-    .site-header .container{
-        min-height: 60px;
-        padding: 10px 16px;
-        gap: 12px;
-    }
-
-    .logo img{
-        height: 40px;
-    }
-
-    .site-brand h1{
-        font-size: 1.2rem;
-    }
-
-    .site-brand p{
-        display: none; /* Oculta a descrição no celular */
-    }
-
-    .main-nav{
-        gap: 14px;
-        font-size: .95rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    main{
-        padding-top: 30px;
-    }
-
-}
 /* ==========================
    HERO
 ========================== */
@@ -746,5 +711,41 @@ article img{
     flex-direction:column;
 
 }
+
+}
+/* ==========================================================
+   RESPONSIVO
+   ========================================================== */
+
+@media (max-width: 768px){
+
+    .site-header .container{
+        min-height: 60px;
+        padding: 10px 16px;
+        gap: 12px;
+    }
+
+    .logo img{
+        height: 40px;
+    }
+
+    .site-brand h1{
+        font-size: 1.2rem;
+    }
+
+    .site-brand p{
+        display: none; /* Oculta a descrição no celular */
+    }
+
+    .main-nav{
+        gap: 14px;
+        font-size: .95rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main{
+        padding-top: 30px;
+    }
 
 }
