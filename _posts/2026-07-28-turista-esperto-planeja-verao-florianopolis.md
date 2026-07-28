@@ -6,6 +6,9 @@ author: SustainaTrip
 
 description: "Vai passar o verão em Florianópolis? Confira um guia prático para evitar perrengues, planejar sua viagem e aproveitar a Ilha da Magia com tranquilidade."
 
+categories:
+  - Planejamento
+
 image: /assets/images/posts/verao-floripa.jpg
 ---
 
