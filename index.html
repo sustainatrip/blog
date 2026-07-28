@@ -8,7 +8,7 @@ title: Blog
     <div class="hero-content">
 
         <span class="hero-tag">
-            🌿 SustainaTrip Blog
+            🌿 Bem-vindo ao Blog da SustainaTrip
         </span>
 
         <h1>
@@ -17,12 +17,9 @@ title: Blog
         </h1>
 
         <p>
-
-            Histórias, cultura, ecoturismo,
-            gastronomia e experiências
-            para explorar Florianópolis e
-            outros destinos de forma sustentável.
-
+            Histórias, cultura, ecoturismo, gastronomia e experiências
+            para explorar Florianópolis e outros destinos de forma
+            consciente e sustentável.
         </p>
 
         <a href="#artigos" class="btn-primary">
@@ -35,29 +32,38 @@ title: Blog
 
 <section id="artigos" class="latest-posts">
 
-    <h2>Últimos artigos</h2>
+    <div class="section-header">
+
+        <h2>Últimos artigos</h2>
+
+        <p>
+            Conteúdos sobre turismo sustentável, cultura,
+            natureza e experiências autênticas.
+        </p>
+
+    </div>
 
     <div class="posts-grid">
 
-    {% for post in site.posts %}
+        {% for post in site.posts %}
 
         <article class="card">
 
             {% if post.image %}
-                <a href="{{ post.url | relative_url }}">
-                    <img
-                        src="{{ post.image | relative_url }}"
-                        alt="{{ post.title }}">
-                </a>
+            <a href="{{ post.url | relative_url }}">
+                <img
+                    src="{{ post.image | relative_url }}"
+                    alt="{{ post.title }}">
+            </a>
             {% endif %}
 
             <div class="card-content">
 
-         {% if post.categories.size > 0 %}
-            <span class="badge">
-                {{ post.categories.first }}
-            </span>
-        {% endif %}
+                {% if post.categories and post.categories.size > 0 %}
+                <span class="badge">
+                    {{ post.categories.first }}
+                </span>
+                {% endif %}
 
                 <h3>
 
@@ -68,16 +74,14 @@ title: Blog
                 </h3>
 
                 <small>
-
                     {{ post.date | date: "%d de %B de %Y" }}
-
                 </small>
 
                 <p>
 
                     {{ post.excerpt
-                       | strip_html
-                       | truncate: 170 }}
+                        | strip_html
+                        | truncate: 170 }}
 
                 </p>
 
@@ -93,51 +97,8 @@ title: Blog
 
         </article>
 
-    {% endfor %}
+        {% endfor %}
 
     </div>
-
-</section>
-
-<section class="categories">
-
-    <h2>Categorias</h2>
-
-    <div class="category-grid">
-
-        <div class="category-card">
-            🌊
-            <h3>Praias</h3>
-        </div>
-
-        <div class="category-card">
-            🌿
-            <h3>Ecoturismo</h3>
-        </div>
-
-        <div class="category-card">
-            🏛️
-            <h3>Cultura</h3>
-        </div>
-
-        <div class="category-card">
-            🍽️
-            <h3>Gastronomia</h3>
-        </div>
-
-    </div>
-
-</section>
-
-<section class="newsletter">
-
-    <h2>Acompanhe o blog</h2>
-
-    <p>
-
-        Novos artigos sobre turismo,
-        natureza e experiências locais.
-
-    </p>
 
 </section>
