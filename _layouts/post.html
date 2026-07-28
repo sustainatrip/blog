@@ -2,6 +2,13 @@
 layout: default
 ---
 
+{% assign words = content | number_of_words %}
+{% assign reading_time = words | divided_by: 200 %}
+
+{% if reading_time < 1 %}
+    {% assign reading_time = 1 %}
+{% endif %}
+
 <article class="post-page">
 
     {% if page.image %}
@@ -16,38 +23,34 @@ layout: default
 
     <header class="post-header">
 
-        {% if page.categories.size > 0 %}
+        {% if page.categories and page.categories.size > 0 %}
         <span class="post-category">
-
             {{ page.categories.first }}
-
         </span>
         {% endif %}
 
-        <h1>
-
-            {{ page.title }}
-
-        </h1>
+        <h1>{{ page.title }}</h1>
 
         <div class="post-meta">
 
             <span>
                 📅 {{ page.date | date: "%d/%m/%Y" }}
             </span>
-{% assign words = content | number_of_words %}
-{% assign reading_time = words | divided_by: 200 %}
-{% if reading_time < 1 %}
-    {% assign reading_time = 1 %}
-{% endif %}
 
             {% if page.author %}
             <span>
-
                 • ✍️ {{ page.author }}
-
             </span>
             {% endif %}
+
+            <span>
+                • ⏱️ {{ reading_time }}
+                {% if reading_time == 1 %}
+                    min de leitura
+                {% else %}
+                    min de leitura
+                {% endif %}
+            </span>
 
         </div>
 
@@ -59,46 +62,43 @@ layout: default
 
     </section>
 
-    {% if page.tags.size > 0 %}
+    {% if page.tags and page.tags.size > 0 %}
     <section class="post-tags">
 
         {% for tag in page.tags %}
 
-            <span class="tag">
-
-                #{{ tag }}
-
-            </span>
+        <span class="tag">
+            #{{ tag }}
+        </span>
 
         {% endfor %}
 
     </section>
-
     {% endif %}
 
     <nav class="post-navigation">
 
         {% if page.previous %}
 
-            <a
+        <a
             class="prev-post"
             href="{{ page.previous.url | relative_url }}">
 
             ← {{ page.previous.title }}
 
-            </a>
+        </a>
 
         {% endif %}
 
         {% if page.next %}
 
-            <a
+        <a
             class="next-post"
             href="{{ page.next.url | relative_url }}">
 
             {{ page.next.title }} →
 
-            </a>
+        </a>
 
         {% endif %}
 
