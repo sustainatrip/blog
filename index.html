@@ -1,20 +1,31 @@
 ---
 layout: default
-title: Início
+title: Blog
 ---
 
 <section class="hero">
 
     <div class="hero-content">
 
-        <h1>Descubra o mundo de forma mais sustentável.</h1>
+        <span class="hero-tag">
+            🌿 SustainaTrip Blog
+        </span>
+
+        <h1>
+            Descubra destinos que inspiram,
+            preservam e conectam pessoas.
+        </h1>
 
         <p>
-            Histórias, destinos, cultura, natureza e experiências
-            para quem acredita que viajar pode transformar pessoas e lugares.
+
+            Histórias, cultura, ecoturismo,
+            gastronomia e experiências
+            para explorar Florianópolis e
+            outros destinos de forma sustentável.
+
         </p>
 
-        <a href="#posts" class="btn">
+        <a href="#artigos" class="btn-primary">
             Explorar artigos
         </a>
 
@@ -22,15 +33,15 @@ title: Início
 
 </section>
 
-<section id="posts" class="posts-section">
+<section id="artigos" class="latest-posts">
 
     <h2>Últimos artigos</h2>
 
     <div class="posts-grid">
 
-        {% for post in site.posts %}
+    {% for post in site.posts %}
 
-        <article class="post-card">
+        <article class="card">
 
             {% if post.image %}
                 <a href="{{ post.url | relative_url }}">
@@ -40,33 +51,39 @@ title: Início
                 </a>
             {% endif %}
 
-            <div class="post-content">
+            <div class="card-content">
 
-                <span class="category">
-                    {{ post.category }}
-                </span>
+                {% if post.category %}
+                    <span class="badge">
+                        {{ post.category }}
+                    </span>
+                {% endif %}
 
                 <h3>
+
                     <a href="{{ post.url | relative_url }}">
                         {{ post.title }}
                     </a>
+
                 </h3>
 
                 <small>
+
                     {{ post.date | date: "%d de %B de %Y" }}
+
                 </small>
 
                 <p>
 
                     {{ post.excerpt
-                        | strip_html
-                        | truncate: 180 }}
+                       | strip_html
+                       | truncate: 170 }}
 
                 </p>
 
                 <a
-                    class="read-more"
-                    href="{{ post.url | relative_url }}">
+                    href="{{ post.url | relative_url }}"
+                    class="read-more">
 
                     Continuar lendo →
 
@@ -76,8 +93,51 @@ title: Início
 
         </article>
 
-        {% endfor %}
+    {% endfor %}
 
     </div>
+
+</section>
+
+<section class="categories">
+
+    <h2>Categorias</h2>
+
+    <div class="category-grid">
+
+        <div class="category-card">
+            🌊
+            <h3>Praias</h3>
+        </div>
+
+        <div class="category-card">
+            🌿
+            <h3>Ecoturismo</h3>
+        </div>
+
+        <div class="category-card">
+            🏛️
+            <h3>Cultura</h3>
+        </div>
+
+        <div class="category-card">
+            🍽️
+            <h3>Gastronomia</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="newsletter">
+
+    <h2>Acompanhe o blog</h2>
+
+    <p>
+
+        Novos artigos sobre turismo,
+        natureza e experiências locais.
+
+    </p>
 
 </section>
