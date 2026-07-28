@@ -1,0 +1,318 @@
+/* ==========================================================
+   SustainaTrip Theme
+   ========================================================== */
+
+:root{
+    --primary:#1F5E3B;
+    --primary-dark:#184a2e;
+    --secondary:#0D5C75;
+    --background:#F8F9F7;
+    --surface:#FFFFFF;
+    --text:#222222;
+    --muted:#6B7280;
+    --border:#E5E7EB;
+
+    --radius:14px;
+    --shadow:0 8px 25px rgba(0,0,0,.08);
+
+    --max-width:1180px;
+}
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:
+        Inter,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+    line-height:1.7;
+
+}
+
+/* Links */
+
+a{
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    transition:.25s;
+
+}
+
+a:hover{
+
+    color:var(--primary-dark);
+
+}
+
+/* Container */
+
+.container{
+
+    width:min(92%, var(--max-width));
+
+    margin:auto;
+
+}
+
+/* ==========================================================
+   HEADER
+   ========================================================== */
+
+.site-header{
+
+    background:white;
+
+    border-bottom:1px solid var(--border);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+}
+
+.site-header .container{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:30px;
+
+    min-height:84px;
+
+}
+
+/* Logo */
+
+.logo img{
+
+    height:60px;
+
+    display:block;
+
+}
+
+/* Marca */
+
+.site-brand{
+
+    flex:1;
+
+}
+
+.site-brand h1{
+
+    font-size:1.6rem;
+
+}
+
+.site-brand h1 a{
+
+    color:var(--text);
+
+}
+
+.site-brand p{
+
+    color:var(--muted);
+
+    font-size:.95rem;
+
+}
+
+/* Menu */
+
+.main-nav{
+
+    display:flex;
+
+    gap:24px;
+
+    align-items:center;
+
+}
+
+.main-nav a{
+
+    color:var(--text);
+
+    font-weight:600;
+
+}
+
+.main-nav a:hover{
+
+    color:var(--primary);
+
+}
+
+/* ==========================================================
+   MAIN
+   ========================================================== */
+
+main{
+
+    padding:60px 0;
+
+}
+
+/* ==========================================================
+   POSTS
+   ========================================================== */
+
+.posts{
+
+    display:grid;
+
+    gap:40px;
+
+}
+
+.post{
+
+    background:white;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    padding:35px;
+
+}
+
+.post h1,
+.post h2{
+
+    margin-bottom:15px;
+
+}
+
+.post .entry{
+
+    color:#444;
+
+    margin:18px 0;
+
+}
+
+.read-more{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:12px 22px;
+
+    border-radius:8px;
+
+}
+
+.read-more:hover{
+
+    background:var(--primary-dark);
+
+    color:white;
+
+}
+
+/* ==========================================================
+   ARTICLE
+   ========================================================== */
+
+article img{
+
+    max-width:100%;
+
+    border-radius:12px;
+
+    margin:20px 0;
+
+}
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
+.site-footer{
+
+    background:white;
+
+    border-top:1px solid var(--border);
+
+    margin-top:80px;
+
+}
+
+.site-footer .container{
+
+    padding:35px 0;
+
+    text-align:center;
+
+    color:var(--muted);
+
+}
+
+/* ==========================================================
+   RESPONSIVO
+   ========================================================== */
+
+@media (max-width:900px){
+
+.site-header .container{
+
+    flex-direction:column;
+
+    padding:20px 0;
+
+}
+
+.main-nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.site-brand{
+
+    text-align:center;
+
+}
+
+.post{
+
+    padding:25px;
+
+}
+
+}
