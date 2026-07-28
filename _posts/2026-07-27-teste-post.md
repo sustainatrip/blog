@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Teste"
+title: "Hello World, this is a test post"
 date: 2026-07-27
-author: SustainaTrip
+author: Kenner Enrique
 image: /assets/images/hercilio.jpg
 categories:
   - Cultura
