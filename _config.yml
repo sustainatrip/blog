@@ -8,6 +8,7 @@ baseurl: "/blog"
 
 lang: pt-BR
 timezone: America/Sao_Paulo
+avatar: /assets/images/logo.png
 
 markdown: kramdown
 highlighter: rouge
