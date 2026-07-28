@@ -1,41 +1,47 @@
 <header class="site-header">
 
-<div class="container">
+    <div class="container">
 
-<a class="logo"
+        <a class="logo" href="{{ '/' | relative_url }}">
 
-href="{{ '/' | relative_url }}">
+            <img src="{{ site.avatar | relative_url }}"
+                 alt="{{ site.title }}">
 
-<img
+        </a>
 
-src="{{ site.avatar | relative_url }}"
+        <div class="site-brand">
 
-alt="{{ site.title }}">
+            <h1>
 
-</a>
+                <a href="{{ '/' | relative_url }}">
 
-<div class="site-brand">
+                    {{ site.title }}
 
-<h1>
+                </a>
 
-<a href="{{ '/' | relative_url }}">
+            </h1>
 
-{{ site.title }}
+            <p>{{ site.description }}</p>
 
-</a>
+        </div>
 
-</h1>
+        <button class="menu-toggle"
+                aria-label="Abrir menu">
 
-<p>
+            ☰
 
-{{ site.description }}
+        </button>
 
-</p>
+        {% include navigation.html %}
 
-</div>
+        <button id="darkMode"
+                class="dark-button"
+                aria-label="Alternar tema">
 
-{% include navigation.html %}
+            🌙
 
-</div>
+        </button>
+
+    </div>
 
 </header>
