@@ -53,11 +53,11 @@ title: Blog
 
             <div class="card-content">
 
-                {% if post.category %}
-                    <span class="badge">
-                        {{ post.category }}
-                    </span>
-                {% endif %}
+         {% if post.categories.size > 0 %}
+            <span class="badge">
+                {{ post.categories.first }}
+            </span>
+        {% endif %}
 
                 <h3>
 
