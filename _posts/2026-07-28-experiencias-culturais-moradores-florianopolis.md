@@ -69,4 +69,4 @@ Se você está em busca de mais do que fotos — se quer viver momentos que aque
 
 Assine a newsletter da Sustaina Trip e receba roteiros com experiências culturais reais, guiadas por quem vive a ilha de verdade.
 
-👉 [**Quero explorar com consciência**](https://sustainatrip.com.br/#contato)
+👉 [**Quero explorar com consciência**](https://sustainatrip.com.br/#cta)
