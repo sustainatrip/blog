@@ -1,0 +1,41 @@
+<header class="site-header">
+
+<div class="container">
+
+<a class="logo"
+
+href="{{ '/' | relative_url }}">
+
+<img
+
+src="{{ site.avatar | relative_url }}"
+
+alt="{{ site.title }}">
+
+</a>
+
+<div class="site-brand">
+
+<h1>
+
+<a href="{{ '/' | relative_url }}">
+
+{{ site.title }}
+
+</a>
+
+</h1>
+
+<p>
+
+{{ site.description }}
+
+</p>
+
+</div>
+
+{% include navigation.html %}
+
+</div>
+
+</header>
