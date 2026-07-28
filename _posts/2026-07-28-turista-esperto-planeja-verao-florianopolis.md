@@ -7,16 +7,6 @@ author: SustainaTrip
 description: "Vai passar o verão em Florianópolis? Confira um guia prático para evitar perrengues, planejar sua viagem e aproveitar a Ilha da Magia com tranquilidade."
 
 image: /assets/images/posts/verao-floripa.jpg
-
-categories:
-  - Planejamento
-
-tags:
-  - Florianópolis
-  - Verão
-  - Dicas
-  - Turismo
-  - Planejamento
 ---
 
 # Turista esperto planeja: guia prático para o verão em Floripa
