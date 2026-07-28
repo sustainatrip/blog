@@ -3,8 +3,8 @@ email: contato@sustainatrip.com.br
 description: >
   Blog sobre turismo sustentável, viagens, cultura e experiências.
 
-url: "https://sustainatrip.github.io"
-baseurl: "/blog"
+url: "https://blog.sustainatrip.com.br"
+baseurl: ""
 
 lang: pt-BR
 timezone: America/Sao_Paulo
