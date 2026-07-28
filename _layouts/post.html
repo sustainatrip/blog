@@ -3,25 +3,6 @@ layout: default
 ---
 
 <article class="post-page">
-<nav class="breadcrumb">
-
-    <a href="{{ '/' | relative_url }}">
-        Início
-    </a>
-
-    {% if page.categories %}
-        &nbsp;›&nbsp;
-
-        <a href="{{ '/categorias/' | relative_url }}">
-            {{ page.categories.first }}
-        </a>
-    {% endif %}
-
-    &nbsp;›&nbsp;
-
-    <span>{{ page.title }}</span>
-
-</nav>
 
     {% if page.image %}
     <div class="post-cover">
@@ -92,58 +73,7 @@ layout: default
         {% endfor %}
 
     </section>
-<section class="related-posts">
 
-<h2>Você também pode gostar</h2>
-
-<div class="related-grid">
-
-{% assign maxRelated = 3 %}
-{% assign count = 0 %}
-
-{% for post in site.posts %}
-
-{% if post.url != page.url %}
-
-{% if post.categories.first == page.categories.first %}
-
-<div class="related-card">
-
-<h3>
-
-<a href="{{ post.url | relative_url }}">
-
-{{ post.title }}
-
-</a>
-
-</h3>
-
-<p>
-
-{{ post.excerpt
-| strip_html
-| truncate:120 }}
-
-</p>
-
-</div>
-
-{% assign count = count | plus:1 %}
-
-{% endif %}
-
-{% endif %}
-
-{% if count >= maxRelated %}
-{% break %}
-{% endif %}
-
-{% endfor %}
-
-</div>
-
-</section>
     {% endif %}
 
     <nav class="post-navigation">
