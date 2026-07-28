@@ -61,7 +61,7 @@ Estamos sempre abertos a novas ideias, parcerias e projetos.
 
 Se você deseja entrar em contato, compartilhar uma história ou colaborar conosco, será um prazer conversar.
 
-📧 [contato@sustainatrip.com.br](mailto:contato@sustainatrip.com.br)
+📧 **[contato@sustainatrip.com.br](mailto:contato@sustainatrip.com.br)**
 
 
 ---
