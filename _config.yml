@@ -8,7 +8,7 @@ baseurl: ""
 
 lang: pt-BR
 timezone: America/Sao_Paulo
-avatar: /images/logo_dark.png
+avatar: /images/logo_bg.png
 
 markdown: kramdown
 highlighter: rouge
