@@ -18,7 +18,17 @@
     color-scheme:light dark;
 
 }
-
+/*
+:root {
+    --primary: #1F5E3B;
+    --primary-dark: #184a2e;
+    --secondary: #0D5C75;
+    --background: #F8F9F7;
+    --surface: #FFFFFF;
+    --text: #222222;
+    --muted: #6B7280;
+    --border: #E5E7EB;
+*/
     --radius: 14px;
     --shadow: 0 8px 25px rgba(0, 0, 0, .08);
 
