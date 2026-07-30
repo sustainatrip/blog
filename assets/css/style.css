@@ -61,19 +61,24 @@
     --max-width: 1180px;
 }
 
-@media (prefers-color-scheme: light){
+:root {
+  color-scheme: dark;
 
-:root{
+  --primary-color: #07131f;
+  --secondary-color: #10273a;
+  --surface-color: #1b3d56;
 
-    --bg:#ffffff;
-    --surface:#f8fafc;
-    --text:#1f2937;
-    --muted:#6b7280;
-    --border:#e5e7eb;
-    --primary:#0f766e;
+  --accent-color: #00c896;       /* Verde da marca */
+  --accent-hover: #22e3b2;
 
- 
+  --text-color: #f4f7fa;
+  --text-secondary: #c8d3dc;
+  --text-muted: #8fa3b4;
 
+  --link-color: #59d9ff;
+  --link-hover: #8ae7ff;
+
+  --border-color: #21445f;
 }
  
 
