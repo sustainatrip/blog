@@ -6,15 +6,18 @@
    1. VARIÁVEIS E RESET
    ========================================================== */
 
-:root {
-    --primary: #1F5E3B;
-    --primary-dark: #184a2e;
-    --secondary: #0D5C75;
-    --background: #F8F9F7;
-    --surface: #FFFFFF;
-    --text: #222222;
-    --muted: #6B7280;
-    --border: #E5E7EB;
+:root{
+
+    --bg:#ffffff;
+    --surface:#f8fafc;
+    --text:#1f2937;
+    --muted:#6b7280;
+    --border:#e5e7eb;
+    --primary:#0f766e;
+
+    color-scheme:light dark;
+
+}
 
     --radius: 14px;
     --shadow: 0 8px 25px rgba(0, 0, 0, .08);
