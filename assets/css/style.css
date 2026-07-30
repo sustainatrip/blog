@@ -61,7 +61,7 @@
     --max-width: 1180px;
 }
 
-:root {
+/* :root {
   color-scheme: dark;
 
   --primary-color: #07131f;
@@ -82,7 +82,9 @@
 }
  
 
-}
+} 
+
+*/
 /* Reset */
 * {
     margin: 0;
