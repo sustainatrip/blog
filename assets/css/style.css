@@ -6,7 +6,7 @@
    1. VARIÁVEIS E RESET
    ========================================================== */
 
-   :root{
+ /*  :root{
 
         --bg:#0f172a;
         --surface:#1e293b;
@@ -15,9 +15,16 @@
         --border:#334155;
         --primary:#34d399;
 
-    }
+    }*/
 
+:root {
+  --primary-color: #0d0d0d;
+  --secondary-color: #1a1a1a;
+  --accent-color: #00c896;
+  --text-color: #f0f0f0;
+  --link-hover: #00ffc3;
    color-scheme:light dark;
+
 /*
 
 :root {
