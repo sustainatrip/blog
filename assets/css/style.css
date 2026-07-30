@@ -6,19 +6,20 @@
    1. VARIÁVEIS E RESET
    ========================================================== */
 
-:root{
+   :root{
 
-    --bg:#ffffff;
-    --surface:#f8fafc;
-    --text:#1f2937;
-    --muted:#6b7280;
-    --border:#e5e7eb;
-    --primary:#0f766e;
+        --bg:#0f172a;
+        --surface:#1e293b;
+        --text:#f8fafc;
+        --muted:#cbd5e1;
+        --border:#334155;
+        --primary:#34d399;
 
-    color-scheme:light dark;
+    }
 
-}
+   color-scheme:light dark;
 /*
+
 :root {
     --primary: #1F5E3B;
     --primary-dark: #184a2e;
@@ -35,18 +36,21 @@
     --max-width: 1180px;
 }
 
-@media (prefers-color-scheme: dark){
+@media (prefers-color-scheme: light){
 
-    :root{
+:root{
 
-        --bg:#0f172a;
-        --surface:#1e293b;
-        --text:#f8fafc;
-        --muted:#cbd5e1;
-        --border:#334155;
-        --primary:#34d399;
+    --bg:#ffffff;
+    --surface:#f8fafc;
+    --text:#1f2937;
+    --muted:#6b7280;
+    --border:#e5e7eb;
+    --primary:#0f766e;
 
-    }
+ 
+
+}
+ 
 
 }
 /* Reset */
