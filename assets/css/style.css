@@ -1,131 +1,206 @@
 /* ==========================================================
-   SustainaTrip Theme
+   SustainaTrip Theme v2
+   Base CSS
    ========================================================== */
 
 /* ==========================================================
-   1. VARIÁVEIS E RESET
+   1. RESET
    ========================================================== */
 
- /*  :root{
-
-        --bg:#0f172a;
-        --surface:#1e293b;
-        --text:#f8fafc;
-        --muted:#cbd5e1;
-        --border:#334155;
-        --primary:#34d399;
-
-    }*/
-
-:root {
-  color-scheme: dark;
-
-  /* Backgrounds */
-  --primary-color: #111827;      /* Fundo principal */
-  --secondary-color: #1f2937;    /* Cards, menus */
-  --surface-color: #374151;      /* Hover, bordas */
-
-  /* Destaques */
-  --accent-color: #14b8a6;       /* Verde água */
-  --accent-hover: #2dd4bf;
-
-  /* Texto */
-  --text-color: #f9fafb;
-  --text-secondary: #d1d5db;
-  --text-muted: #9ca3af;
-
-  /* Links */
-  --link-color: #5eead4;
-  --link-hover: #99f6e4;
-
-  /* Extras */
-  --border-color: #374151;
-  --shadow-color: rgba(0,0,0,.45);
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-/*
-
-:root {
-    --primary: #1F5E3B;
-    --primary-dark: #184a2e;
-    --secondary: #0D5C75;
-    --background: #F8F9F7;
-    --surface: #FFFFFF;
-    --text: #222222;
-    --muted: #6B7280;
-    --border: #E5E7EB;
-*/
-    --radius: 14px;
-    --shadow: 0 8px 25px rgba(0, 0, 0, .08);
-
-    --max-width: 1180px;
+html{
+    scroll-behavior:smooth;
 }
 
-/* :root {
-  color-scheme: dark;
-
-  --primary-color: #07131f;
-  --secondary-color: #10273a;
-  --surface-color: #1b3d56;
-
-  --accent-color: #00c896;       /* Verde da marca */
-  --accent-hover: #22e3b2;
-
-  --text-color: #f4f7fa;
-  --text-secondary: #c8d3dc;
-  --text-muted: #8fa3b4;
-
-  --link-color: #59d9ff;
-  --link-hover: #8ae7ff;
-
-  --border-color: #21445f;
-}
- 
-
-} 
-
-*/
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body{
+    min-height:100vh;
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
 }
 
-html {
-    scroll-behavior: smooth;
+img,
+picture,
+svg,
+video{
+    display:block;
+    max-width:100%;
 }
 
-body {
-    font-family: Inter, "Segoe UI", Arial, sans-serif;
-    background: var(--background);
-    color: var(--text);
-    line-height: 1.7;
+button,
+input,
+textarea,
+select{
+    font:inherit;
+}
+
+ul,
+ol{
+    list-style:none;
 }
 
 /* ==========================================================
-   2. ELEMENTOS BASE
+   2. VARIÁVEIS
    ========================================================== */
 
-a {
-    color: var(--primary);
-    text-decoration: none;
-    transition: color .25s;
+:root{
+
+    color-scheme:dark;
+
+    /* Marca */
+
+    --primary:#14b8a6;
+    --primary-hover:#0d9488;
+
+    /* Fundos */
+
+    --background:#111827;
+    --surface:#1f2937;
+    --surface-hover:#273548;
+
+    /* Texto */
+
+    --text:#f9fafb;
+    --muted:#cbd5e1;
+
+    /* Extras */
+
+    --border:#374151;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+    --radius:16px;
+
+    /* Layout */
+
+    --max-width:1180px;
+
+    /* Transições */
+
+    --transition:.25s ease;
+
 }
 
-a:hover {
-    color: var(--primary-dark);
+/* ==========================================================
+   3. TIPOGRAFIA
+   ========================================================== */
+
+body{
+
+    font-family:
+        Inter,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
+    background:var(--background);
+    color:var(--text);
+
+    line-height:1.75;
+
+    font-size:16px;
+
 }
 
-.container {
-    width: min(92%, var(--max-width));
-    margin: 0 auto;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    color:var(--text);
+
+    font-weight:700;
+
+    line-height:1.2;
+
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+p{
+
+    color:var(--muted);
+
+    margin-bottom:1.2rem;
+
+}
+
+strong{
+
+    color:var(--text);
+
+}
+
+/* ==========================================================
+   4. LINKS
+   ========================================================== */
+
+a{
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    transition:color var(--transition);
+
+}
+
+a:hover{
+
+    color:var(--primary-hover);
+
+}
+
+
+/* ==========================================================
+   5. LAYOUT
+   ========================================================== */
+
+.container{
+
+    width:min(92%, var(--max-width));
+
+    margin-inline:auto;
+
+}
+
+main{
+
+    padding:60px 0;
+
+}
+
+/* ==========================================================
+   6. UTILITÁRIOS
+   ========================================================== */
+
+.surface{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.hidden{
+
+    display:none;
+
 }
 
 /* ==========================================================
@@ -563,82 +638,7 @@ main {
     color: var(--muted);
 }
 
-/* ==========================================================
-   10. DARK MODE
-   ========================================================== */
 
-body.dark-mode {
-    background: #111;
-    color: #f0f0f0;
-}
-
-body.dark-mode .site-header,
-body.dark-mode .card,
-body.dark-mode .post,
-body.dark-mode .site-footer,
-body.dark-mode .newsletter,
-body.dark-mode .category-card {
-    background: #1d1d1d;
-    border-color: #333;
-}
-
-body.dark-mode a {
-    color: #78d39c;
-}
-
-body.dark-mode a:hover {
-    color: #a3e4b5;
-}
-
-body.dark-mode .main-nav a {
-    color: #eee;
-}
-
-body.dark-mode .site-brand h1 a {
-    color: #eee;
-}
-
-body.dark-mode .search-box {
-    background: #2a2a2a;
-    border-color: #444;
-    color: #eee;
-}
-
-body.dark-mode .dark-button {
-    color: #eee;
-}
-
-body.dark-mode .hero-tag {
-    background: #2a3f33;
-    color: #78d39c;
-}
-
-body.dark-mode .badge {
-    background: #2a3f33;
-    color: #78d39c;
-}
-
-body.dark-mode .post-category {
-    background: #2a3f33;
-    color: #78d39c;
-}
-
-body.dark-mode .tag {
-    background: #2a2a2a;
-    color: #ccc;
-}
-
-body.dark-mode .post-content blockquote {
-    border-left-color: #78d39c;
-    color: #ccc;
-}
-
-body.dark-mode .post .entry {
-    color: #ccc;
-}
-body.dark-mode .card p {
-    color: #ccc;
-}
 
 /* ==========================================================
    11. RESPONSIVO
