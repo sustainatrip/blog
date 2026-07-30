@@ -116,6 +116,33 @@ img {
 .logo img {
     height: 60px;
 }
+.logo-light{
+
+    display:block;
+
+}
+
+.logo-dark{
+
+    display:none;
+
+}
+
+@media (prefers-color-scheme: dark){
+
+    .logo-light{
+
+        display:none;
+
+    }
+
+    .logo-dark{
+
+        display:block;
+
+    }
+
+}
 
 /* Marca */
 .site-brand {
