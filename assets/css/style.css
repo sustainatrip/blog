@@ -470,7 +470,33 @@ main {
 .post-navigation a {
     font-weight: 600;
 }
+.post-meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+    align-items:center;
 
+    color:#6b7280;
+
+    font-size:.9rem;
+
+    margin:1rem 0 2rem;
+}
+
+.post-meta span{
+    display:flex;
+    align-items:center;
+    gap:.45rem;
+}
+
+.post-meta i{
+
+    color:#0f766e;
+
+    width:18px;
+
+    text-align:center;
+}
 /* ==========================================================
    6. HERO E HOME
    ========================================================== */
