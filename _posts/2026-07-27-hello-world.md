@@ -3,11 +3,10 @@ layout: post
 title: "Hello World, this is a test post"
 date: 2026-07-27
 author: Kenner Enrique
-![Hello World]({{ '/assets/images/helloworld.png' | relative_url }})
 categories:
   - Desenvolvimento
 ---
-
+![Hello World]({{ '/assets/images/hello-world.png' | relative_url }})
 Hello World.
 
 <p>
