@@ -2,7 +2,7 @@
 layout: post
 title: "Hello World, this is a test post"
 date: 2026-07-27
-image: '/assets/images/helloworld.png'
+image: '/main/images/helloworld.png'
 author: Kenner Enrique
 categories:
   - Desenvolvimento
