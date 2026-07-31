@@ -3,7 +3,7 @@ layout: post
 title: "Hello World, this is a test post"
 date: 2026-07-27
 author: Kenner Enrique
-image: /../assets/images/helloworld.png
+![Hello World]({{ '/assets/images/helloworld.png' | relative_url }})
 categories:
   - Desenvolvimento
 ---
