@@ -2,14 +2,12 @@
 layout: post
 title: "Hello World, this is a test post"
 date: 2026-07-27
-image: "https://dummyimage.com/1200x700/0f766e/ffffff&text=Blog"
+image: "https://raw.githubusercontent.com/sustainatrip/blog/refs/heads/main/images/helloworld.png"
 author: Kenner Enrique
 categories:
   - Desenvolvimento
 ---
-<img
-  src="{{ 'https://dummyimage.com/1200x700/0f766e/ffffff&text=Blog' | relative_url }}"
-  alt="Hello world">
+
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti.
 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
