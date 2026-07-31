@@ -5,10 +5,10 @@ date: 2026-07-27
 author: Kenner Enrique
 categories:
   - Desenvolvimento
+<img
+  src="{{ '/post/assets/images/helloworld.png' | relative_url }}"
+  alt="Praia do Campeche">
 ---
-![Hello World]({{ '/assets/images/hello-world.png' | relative_url }})
-Hello World.
-
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti.
 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
