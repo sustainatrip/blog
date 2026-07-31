@@ -2,14 +2,14 @@
 layout: post
 title: "Hello World, this is a test post"
 date: 2026-07-27
-image: '/post/assets/images/helloworld.png'
+image: '/assets/images/helloworld.png'
 author: Kenner Enrique
 categories:
   - Desenvolvimento
 ---
 <img
-  src="{{ '/post/assets/images/helloworld.png' | relative_url }}"
-  alt="Praia do Campeche">
+  src="{{ '/assets/images/helloworld.png' | relative_url }}"
+  alt="Hello world">
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti.
 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
