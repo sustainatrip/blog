@@ -9,7 +9,7 @@ description: "Viva experiências culturais autênticas com moradores locais de F
 categories:
   - Experiências
 
-image: /assets/images/posts/experiencias-culturais-florianopolis.jpg
+image: https://raw.githubusercontent.com/sustainatrip/blog/refs/heads/main/images/experiencias-culturais-com-moradores.png
 ---
 
 Nem sempre é sobre o destino. Muitas vezes, é sobre **quem cruza seu caminho**. Em Florianópolis, o verdadeiro encantamento acontece quando você deixa a rota tradicional e aceita o convite para mergulhar na cultura viva — aquela que pulsa nas mãos dos pescadores, no sotaque das rendeiras e no tempero das cozinheiras.
