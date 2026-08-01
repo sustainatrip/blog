@@ -9,7 +9,7 @@ description: "Descubra 7 destinos secretos de ecoturismo em Santa Catarina: rote
 categories:
   - Destinos
 
-image: /assets/images/posts/ecoturismo-santa-catarina.jpg
+image: https://raw.githubusercontent.com/sustainatrip/blog/refs/heads/main/images/7-destinos-ecoturismo.png
 ---
 
 Enquanto **Florianópolis** brilha como estrela do ecoturismo catarinense, Santa Catarina esconde joias menos óbvias onde a natureza e as comunidades locais criam experiências transformadoras. Este guia revela destinos onde sua viagem gera impacto positivo - perfeitos para quem busca **turismo sustentável em SC** além dos roteiros convencionais.
