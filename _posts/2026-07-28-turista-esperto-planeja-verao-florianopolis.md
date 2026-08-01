@@ -9,7 +9,7 @@ description: "Vai passar o verão em Florianópolis? Confira um guia prático pa
 categories:
   - Planejamento
 
-image: /assets/images/posts/verao-floripa.jpg
+image: https://raw.githubusercontent.com/sustainatrip/blog/refs/heads/main/images/turista-esperto-planeja-florianopolis.png
 ---
 
 # Turista esperto planeja: guia prático para o verão em Floripa
