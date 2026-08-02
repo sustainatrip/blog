@@ -501,11 +501,45 @@ main {
    6. HERO E HOME
    ========================================================== */
 
-.hero {
+/*.hero {
     padding: 100px 0;
     text-align: center;
 }
+*/
+/* HERO */
 
+.hero{
+
+    min-height:75vh;
+
+    margin-top:80px;
+
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.45),
+            rgba(0,0,0,.45)
+        ),
+        url("../../images/hero.webp");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    color:white;
+
+    padding:40px;
+
+}
 .hero-content {
     max-width: 760px;
     margin: 0 auto;
