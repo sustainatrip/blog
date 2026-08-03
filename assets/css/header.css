@@ -1,11 +1,3 @@
-:root{
-    --primary:#2E7D32;
-    --dark:#1f2937;
-    --light:#ffffff;
-    --border:#e5e7eb;
-    --shadow:0 6px 18px rgba(0,0,0,.08);
-}
-
 *{
     margin:0;
     padding:0;
