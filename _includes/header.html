@@ -1,53 +1,38 @@
-<header class="site-header" id="header">
+<header class="site-header">
 
-    <div class="top-bar">
+   <div class="container">
 
-        <div>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
-            <a href="#"><i class="fa-solid fa-location-dot"></i>Florianópolis</a>
-        </div>
+        <a class="logo" href="{{ '/' | relative_url }}">
 
-        <div>
-            <a href="#">PT</a>
-            |
-            <a href="#">ES</a>
-            |
-            <a href="#">EN</a>
-        </div>
-
-    </div>
-
-    <div class="main-header">
-
-        <a class="logo" href="#">
-
-            <img src="https://placehold.co/80x80/2E7D32/FFFFFF?text=S" alt="Logo">
-
-            <div>
-                <h2>SustainaTrip</h2>
-                <span>Blog de Turismo</span>
-            </div>
+            <img src="{{ site.avatar | relative_url }}"
+                 alt="{{ site.title }}">
 
         </a>
 
-        <button class="menu-btn" id="menuBtn">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="site-brand">
+
+            <h1>
+
+                <a href="{{ '/' | relative_url }}">
+
+                    {{ site.title }}
+
+                </a>
+
+            </h1>
+
+            <p>{{ site.description }}</p>
+
+        </div>
+
+        <button class="menu-toggle"
+                aria-label="Abrir menu">
+
+            ☰
+
         </button>
 
-        <nav id="menu">
-
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Artigos</a></li>
-                <li><a href="#">Roteiros</a></li>
-                <li><a href="#">Destinos</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-
-        </nav>
+        {% include navigation.html %}
 
     </div>
 
