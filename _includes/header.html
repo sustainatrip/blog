@@ -1,11 +1,18 @@
-<header class="site-header">
+<header class="site-header" id="header">
 
-   <div class="container">
+    <div class="top-bar">
+
+        ...
+
+    </div>
+
+    <div class="container">
 
         <a class="logo" href="{{ '/' | relative_url }}">
 
-            <img src="{{ site.avatar | relative_url }}"
-                 alt="{{ site.title }}">
+            <img
+                src="{{ site.avatar | relative_url }}"
+                alt="{{ site.title }}">
 
         </a>
 
@@ -25,10 +32,14 @@
 
         </div>
 
-        <button class="menu-toggle"
-                aria-label="Abrir menu">
+        <button
+            class="menu-toggle"
+            id="menuBtn"
+            aria-label="Abrir menu">
 
-            ☰
+            <span></span>
+            <span></span>
+            <span></span>
 
         </button>
 
