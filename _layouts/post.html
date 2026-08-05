@@ -2,6 +2,14 @@
 layout: default
 ---
 
+{% assign is_english = false %}
+
+{% if page.path contains "en/_posts" %}
+    {% assign is_english = true %}
+{% endif %}
+
+{{ page.date | date: "%d/%m/%Y" }}
+
 {% assign words = content | number_of_words %}
 {% assign reading_time = words | divided_by: 200 %}
 
