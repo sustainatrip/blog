@@ -46,6 +46,7 @@ title: Blog
     <div class="posts-grid">
 
         {% for post in site.posts %}
+        {% unless post.path contains "en/_posts" %}
 
         <article class="card">
 
