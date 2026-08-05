@@ -36,6 +36,166 @@ Com um pouco de organização, Florianópolis continua sendo um dos melhores des
 
 > ⚠️ **Importante**
 
+---
+
+# ✅ Checklist do turista preparado para Florianópolis
+
+Florianópolis é uma ilha que exige um pouco de planejamento. A geografia recortada, o trânsito imprevisível e a alta procura na temporada fazem com que um turista preparado tenha uma experiência completamente diferente de quem chega sem informação. Este checklist reúne providências essenciais para uma viagem tranquila e proveitosa.
+
+---
+
+## 1. Reserve a hospedagem com antecedência
+
+**Um mês antes é o mínimo recomendado.** Se a viagem for na alta temporada (dezembro a março) ou em feriados prolongados, a antecedência ideal é de dois a três meses.
+
+**Por que isso importa:**
+- A ilha tem ocupação próxima de 100% no verão. As melhores opções de custo-benefício se esgotam rápido.
+- A localização da hospedagem define toda a logística da viagem. Como o trânsito pode ser intenso, ficar perto das praias ou bairros que você mais pretende frequentar faz enorme diferença.
+
+**Dica prática por região:**
+- **Praias do norte (Canasvieiras, Ingleses, Jurerê):** ideal para famílias e quem quer estrutura de bares e restaurantes.
+- **Lagoa da Conceição:** ponto central, boêmio, com fácil acesso ao leste (Mole, Joaquina, Barra da Lagoa).
+- **Campeche e Sul da ilha:** praias mais preservadas, atmosfera de vila de pescadores, ideal para quem busca sossego.
+- **Centro:** mais negócios que lazer, mas útil para estadias curtas e acesso ao transporte público.
+
+---
+
+## 2. Compre passeios com antecedência
+
+Algumas experiências em Florianópolis têm vagas limitadas e se esgotam com semanas de antecedência na temporada.
+
+**Passeios que exigem agendamento prévio:**
+- **Travessia para a Ilha do Campeche:** o acesso é controlado pelo ICMBio (Instituto Chico Mendes de Conservação da Biodiversidade), com número máximo diário de visitantes. As vagas são preenchidas rapidamente no verão. Compre diretamente com as associações de barqueiros autorizados da Armação, Barra da Lagoa ou Campeche.
+- **Passeios de barco e escunas:** embora haja saídas regulares, os horários mais concorridos (especialmente os que contemplam o pôr do sol) lotam.
+- **Mergulho na Ilha do Arvoredo (Reserva Biológica Marinha):** operadoras autorizadas têm vagas limitadas por dia.
+
+**O que não precisa de tanta antecedência:**
+- Trilhas autoguiadas (Lagoinha do Leste, Costa da Lagoa, Morro da Lagoa).
+- Visitas a praias de acesso livre.
+- Restaurantes (com exceção de alguns muito badalados na temporada).
+
+---
+
+## 3. Configure aplicativos de transporte antes de chegar
+
+**Uber e 99** funcionam bem na ilha, mas é melhor deixar tudo pronto antes da viagem.
+
+**Providências:**
+- Verifique se o aplicativo está atualizado e com o cartão de crédito cadastrado corretamente.
+- Confira se o seu chip de celular ou plano de dados funcionará normalmente em Florianópolis.
+- Tenha uma segunda opção instalada: se um aplicativo estiver com preço dinâmico muito alto, o outro pode estar mais em conta.
+
+**Atenção especial:**
+- Em dias de chuva forte e na alta temporada, o preço dinâmico pode multiplicar o valor de corridas curtas. Vale a pena avaliar se um táxi de ponto fixo não sai mais barato nesses momentos.
+- O aeroporto e a rodoviária têm pontos de táxi com tarifas prefixadas para algumas regiões — compare antes de pedir o carro por aplicativo.
+
+---
+
+## 4. Consulte os horários do transporte público
+
+Se você pretende usar ônibus, mesmo que esporadicamente, um pouco de preparação evita longas esperas.
+
+**Ferramentas essenciais:**
+- **Aplicativo "Floripa no Ponto"** (oficial): mostra a localização dos ônibus em tempo real, previsão de chegada e itinerários completos. Instale e explore antes de chegar.
+- **Google Maps e Moovit:** também funcionam bem para traçar rotas.
+
+**O que você precisa saber:**
+- As linhas que vão para as praias têm frequência reduzida à noite. Depois das 22h ou 23h, dependendo da linha, o intervalo pode passar de uma hora.
+- Aos domingos e feriados, os horários são reduzidos em praticamente todas as linhas.
+- O **Cartão Passe Rápido** pode ser adquirido e recarregado nos terminais de integração. Para estadias curtas, o pagamento por aproximação (cartão de crédito/débito ou celular) já está disponível em boa parte da frota, mas não em 100% dos ônibus — tenha um plano B em dinheiro.
+
+**Estratégia para trajetos de praia:**
+Consulte os horários de pico e evite os ônibus entre 7h30-9h00 e 17h30-19h00. O conforto e a rapidez mudam radicalmente fora desses horários.
+
+---
+
+## 5. Compre um chip de internet, caso seja estrangeiro
+
+A conectividade em Florianópolis é boa nas áreas urbanas e de praia, mas irregular em trilhas e locais mais isolados.
+
+**Para estrangeiros:**
+- Chips pré-pagos das operadoras brasileiras (Vivo, Claro, TIM) são vendidos em quiosques no Aeroporto Hercílio Luz, em lojas de telefonia e até em alguns supermercados mas pode ser confuso para alguns estrangeiros ativar pois é um pouco mais burocráticos
+Minha recomendação é contratar um serviço e-sim internacional que é rápido e simples de contratar e a maioria dos smartphones modernos são compatíveis com esta tecnologia de sim digital.
+
+
+**Para todos os viajantes:**
+- Muitos bares, restaurantes e meios de hospedagem oferecem Wi-Fi gratuito, mas a qualidade varia.
+- Em trilhas mais longas (Lagoinha do Leste, Naufragados), o sinal de celular é fraco ou inexistente.
+
+---
+
+## 6. Leve protetor solar e mochila leve
+
+O sol em Florianópolis é intenso o ano todo, mesmo em dias nublados. Subestimar isso é o erro mais comum dos visitantes.
+
+**O que levar diariamente:**
+- **Protetor solar com FPS alto:** reaplique ao longo do dia, especialmente após entrar no mar.
+- **Chapéu ou boné e óculos de sol.**
+- **Garrafa de água reutilizável:** há pontos de hidratação em terminais de ônibus e alguns espaços públicos, mas nas praias e trilhas nem sempre.
+- **Mochila pequena e leve:** você vai querer as mãos livres para caminhar, tirar fotos e se equilibrar nas pedras.
+- **Canga ou toalha fina:** mais fácil de carregar e seca mais rápido.
+
+**Itens extras para trilhas:**
+- Calçado fechado e antiderrapante (muitas trilhas têm pedras soltas e trechos de subida).
+- Repelente de insetos (especialmente para trilhas com vegetação fechada e áreas de restinga).
+
+---
+
+## 7. Baixe mapas offline
+
+A internet móvel pode falhar nos momentos mais importantes — dentro de um ônibus, no meio de uma trilha ou em uma praia mais afastada.
+
+**Como fazer:**
+- No **Google Maps**, pesquise "Florianópolis" e selecione a opção "Baixar mapa offline". O arquivo permite navegação básica e consulta de trajetos mesmo sem sinal.
+- Baixe também os mapas das regiões específicas que pretende visitar (Lagoa, Campeche, Norte da ilha).
+- Para trilhas, aplicativos como **Wikiloc** permitem baixar trajetos completos com antecedência e funcionam offline via GPS.
+
+**Bônus:**
+Além dos mapas, salve no celular os contatos de emergência, números de táxi e screenshots de reservas e ingressos.
+
+---
+
+## 8. Tenha um plano alternativo para dias de chuva
+
+Dias chuvosos em Florianópolis não são apenas "dias de praia perdidos". O trânsito piora significativamente, e algumas atividades ao ar livre se tornam inviáveis ou perigosas (trilhas escorregadias, mar agitado).
+
+**Sugestões para dias de chuva:**
+- **Mercado Público:** ótimo para um almoço demorado, compras de produtos locais e observação da vida cotidiana.
+- **Centro Histórico:** visite a Catedral Metropolitana, o Museu Histórico de Santa Catarina (Palácio Cruz e Sousa) e o Museu Victor Meirelles. A maioria tem entrada gratuita ou preço simbólico.
+- **Bares e cafés da Lagoa da Conceição:** muitos têm ambientes cobertos aconchegantes, ideais para uma tarde de leitura ou conversa.
+- **Cervejarias artesanais:** Florianópolis tem uma cena cervejeira forte. A região de Canasvieiras e o bairro João Paulo concentram boas opções com visitação e degustação.
+- **Shoppings:** o Floripa Shopping e o Beiramar Shopping são opções para cinema e gastronomia em dias de chuva forte.
+
+A dica de ouro: **não programe todos os dias com atividades rígidas.** Deixe espaço para improvisar conforme o clima.
+
+---
+
+## 9. Aproveite a viagem sem pressa
+
+Florianópolis não é uma cidade para ser "vencida" em três dias. A ilha tem um ritmo próprio, e o estresse do trânsito pode contaminar a experiência de quem tenta fazer muitas coisas em pouco tempo.
+
+**O que isso significa na prática:**
+- Escolha **um ou dois programas principais por dia**, em vez de tentar visitar três praias distantes entre si.
+- Considere o tempo de deslocamento como parte da experiência — o caminho de barco para a Costa da Lagoa, a bicicleta pela Beira-Mar, a estrada sinuosa até o Ribeirão da Ilha. Nada disso é "tempo perdido".
+- Permita-se ficar uma manhã inteira na mesma praia, sem pressa de ir embora.
+- Se algo der errado — um congestionamento inesperado, um restaurante lotado, uma chuva passageira — respire fundo. A ilha sempre oferece uma alternativa bonita por perto.
+
+---
+
+## Resumo final: o essencial em uma lista
+
+- [ ] Hospedagem reservada com pelo menos um mês de antecedência.
+- [ ] Passeios concorridos comprados com antecedência.
+- [ ] Uber e 99 instalados e configurados.
+- [ ] Horários de ônibus consultados (aplicativo Floripa no Ponto instalado).
+- [ ] Chip de internet comprado e ativado (se for estrangeiro).
+- [ ] Protetor solar, chapéu, garrafa de água e mochila leve na bagagem de mão.
+- [ ] Mapas offline baixados.
+- [ ] Lista de programas alternativos para dias de chuva.
+- [ ] Mente aberta para o ritmo da ilha.
+
+Com esse checklist em mãos, você chega a Florianópolis preparado para o que realmente importa: aproveitar cada paisagem, cada sabor e cada encontro que a ilha tem a oferecer.
+
 # Como se locomover em Florianópolis: o guia completo e atualizado
 
 Florianópolis tem uma geografia que desafia qualquer sistema de mobilidade. Parte insular, parte continental, conectada por três pontes, com morros, mangues e mais de 40 km de extensão norte-sul. Circular pela ilha exige estratégia — especialmente na alta temporada de verão (dezembro a março), quando a população flutuante multiplica os congestionamentos.
