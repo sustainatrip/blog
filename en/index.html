@@ -1,0 +1,81 @@
+---
+layout: default
+title: "SustainaTrip Blog | Sustainable Travel in Florianópolis"
+lang: en
+permalink: /en/
+---
+
+<section class="hero">
+  <div class="container">
+    <h1>Sustainable Travel Experiences in Florianópolis</h1>
+    <p class="muted">
+      Discover nature, culture and authentic experiences in Southern Brazil.
+    </p>
+  </div>
+</section>
+
+
+<section class="posts">
+  <div class="container">
+
+    <h2>Latest Stories</h2>
+
+    <div class="post-grid">
+
+      {% for post in site.posts %}
+
+        {% if post.path contains "en/_posts" %}
+
+        <article class="post-card">
+
+          {% if post.image %}
+          <img 
+            src="{{ post.image | relative_url }}" 
+            alt="{{ post.title }}"
+          >
+          {% endif %}
+
+          <div class="post-content">
+
+            <h3>
+              <a href="{{ post.url | relative_url }}">
+                {{ post.title }}
+              </a>
+            </h3>
+
+            {% if post.excerpt %}
+            <p>
+              {{ post.excerpt | strip_html | truncate: 160 }}
+            </p>
+            {% endif %}
+
+            <div class="post-meta">
+              <span>
+                {{ post.date | date: "%B %d, %Y" }}
+              </span>
+
+              {% assign words = post.content | number_of_words %}
+              <span>
+                {{ words | divided_by: 200 | plus: 1 }} min read
+              </span>
+            </div>
+
+            <a 
+              class="read-more" 
+              href="{{ post.url | relative_url }}"
+            >
+              Read more →
+            </a>
+
+          </div>
+
+        </article>
+
+        {% endif %}
+
+      {% endfor %}
+
+    </div>
+
+  </div>
+</section>
