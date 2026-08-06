@@ -15,6 +15,12 @@
 
 {% seo %}
 
+<link
+  rel="preload"
+  as="image"
+  href="{{ '/assets/images/hero.webp' | relative_url }}"
+  fetchpriority="high">
+
 <link rel="icon"
       type="image/png"
       href="{{ '/assets/favicon.ico/favicon-96x96.png' | relative_url }}">
