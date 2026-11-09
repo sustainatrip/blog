@@ -1,39 +1,41 @@
-<header class="site-header">
+<header class="site-nav" id="siteNav">
+  <div class="site-nav__inner">
 
-   <div class="container">
+    <a href="{{ '/' | relative_url }}" class="site-nav__brand">
+      <img src="{{ '/assets/img/logo_bg.png' | relative_url }}" alt="Sustaina Trip" />
+      <span>Sustaina Trip</span>
+    </a>
 
-        <a class="logo" href="{{ '/' | relative_url }}">
+    <nav class="site-nav__links">
+      <a href="{{ '/' | relative_url }}">Início</a>
+      <a href="{{ '/blog.html' | relative_url }}" class="is-current">Blog</a>
+      <a href="{{ '/sobre.html' | relative_url }}">Sobre</a>
+      <a href="{{ '/termos.html' | relative_url }}">Termos</a>
+      <a href="https://wa.me/5548988742011?text=Ol%C3%A1!%20Vim%20pelo%20blog."
+         target="_blank" rel="noopener" class="site-nav__cta">
+        <i class="fab fa-whatsapp"></i>
+        Fale com a gente
+      </a>
+    </nav>
 
-            <img src="{{ site.avatar | relative_url }}"
-                 alt="{{ site.title }}">
+    <button class="site-nav__toggle" id="navToggle" aria-label="Abrir menu" type="button">
+      <i class="fa-solid fa-bars"></i>
+    </button>
 
-        </a>
-
-        <div class="site-brand">
-
-            <h1>
-
-                <a href="{{ '/' | relative_url }}">
-
-                    {{ site.title }}
-
-                </a>
-
-            </h1>
-
-            <p>{{ site.description }}</p>
-
-        </div>
-
-        <button class="menu-toggle"
-                aria-label="Abrir menu">
-
-            ☰
-
-        </button>
-
-        {% include navigation.html %}
-
-    </div>
-
+  </div>
 </header>
+
+<script>
+(function () {
+  const nav = document.getElementById('siteNav');
+  const btn = document.getElementById('navToggle');
+  if (nav) {
+    const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 40);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+  if (btn && nav) {
+    btn.addEventListener('click', () => nav.classList.toggle('is-open'));
+  }
+})();
+</script>
