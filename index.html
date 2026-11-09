@@ -1,106 +1,181 @@
 ---
 layout: default
 title: Blog
+description: "Histórias, pessoas, comida, mar. O que a gente encontra quando sai do mapa em Florianópolis."
 ---
 
-<section class="hero">
+<section class="blog-hero">
+  <div class="blog-hero__inner">
 
-    <div class="hero-content">
+    <p class="blog-hero__kicker">Do diário · Sustaina Trip</p>
 
-        <span class="hero-tag">
-            🌿 Bem-vindo ao Blog da SustainaTrip
-        </span>
+    <h1 class="blog-hero__title">
+      A Ilha conta.<br>
+      <em>A gente anota.</em>
+    </h1>
 
-        <h1>
-            Descubra destinos que inspiram,
-            preservam e conectam pessoas.
-        </h1>
+    <p class="blog-hero__lede">
+      Cultura, natureza, gastronomia e pessoas. Histórias de quem vive
+      aqui — e de quem chega pra ficar um pouco.
+    </p>
 
-        <p>
-            Histórias, cultura, ecoturismo, gastronomia e experiências
-            para explorar Florianópolis e outros destinos de forma
-            consciente e sustentável.
-        </p>
+    <a href="#artigos" class="btn">
+      Ver todas as histórias
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </a>
 
-        <a href="#artigos" class="btn-primary">
-            Explorar artigos
-        </a>
-
-    </div>
-
+  </div>
 </section>
 
-<section id="artigos" class="latest-posts">
+<section id="artigos" class="posts-section">
 
-    <div class="section-header">
+  <div class="posts-section__inner">
 
-        <h2>Últimos artigos</h2>
+    <header class="section-head">
+      <p class="section-head__kicker">Últimas histórias</p>
+      <h2 class="section-head__title">Do diário <em>da Ilha.</em></h2>
+      <p class="section-head__lede">
+        Sobre quem vive aqui, o que se come, e por que vale voltar.
+      </p>
+    </header>
 
-        <p>
-            Conteúdos sobre turismo sustentável, cultura,
-            natureza e experiências autênticas.
-        </p>
+    {% if site.posts.size > 0 %}
 
-    </div>
+      {% assign visible_posts = site.posts | where_exp: "post", "post.path contains 'en/_posts' == false" %}
 
-    <div class="posts-grid">
+      {% if visible_posts.size > 0 %}
 
-        {% for post in site.posts %}
-        {% unless post.path contains "en/_posts" %}
+        <div class="posts-filter" id="postsFilter" aria-label="Filtrar por categoria">
+          <button class="filter-btn is-active" data-filter="*" type="button">Todos</button>
+        </div>
 
-        <article class="card">
+        <div class="posts-grid" id="postsGrid">
 
-            {% if post.image %}
-            <a href="{{ post.url | relative_url }}">
+          {% for post in site.posts %}
+            {% unless post.path contains "en/_posts" %}
+
+            <article
+              class="post-card"
+              data-category="{% if post.categories and post.categories.size > 0 %}{{ post.categories.first }}{% endif %}"
+            >
+
+              {% if post.image %}
+              <a href="{{ post.url | relative_url }}" class="post-card__media" aria-label="Ler: {{ post.title }}">
                 <img
-                    src="{{ post.image | relative_url }}"
-                    alt="{{ post.title }}">
-            </a>
-            {% endif %}
+                  src="{{ post.image | relative_url }}"
+                  alt="{{ post.title }}"
+                  loading="lazy"
+                  onerror="this.style.display='none'; this.parentElement.classList.add('post-card__media--empty');"
+                />
+              </a>
+              {% endif %}
 
-            <div class="card-content">
+              <div class="post-card__body">
 
                 {% if post.categories and post.categories.size > 0 %}
-                <span class="badge">
-                    {{ post.categories.first }}
+                <span class="post-card__tag">
+                  {{ post.categories.first }}
                 </span>
                 {% endif %}
 
-                <h3>
-
-                    <a href="{{ post.url | relative_url }}">
-                        {{ post.title }}
-                    </a>
-
+                <h3 class="post-card__title">
+                  <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
                 </h3>
 
-                <small>
-                    {{ post.date | date: "%d de %B de %Y" }}
-                </small>
+                <time class="post-card__date" datetime="{{ post.date | date_to_xmlschema }}">
+                  {{ post.date | date: "%d de %B de %Y" }}
+                </time>
 
-                <p>
-
-                    {{ post.excerpt
-                        | strip_html
-                        | truncate: 170 }}
-
+                <p class="post-card__excerpt">
+                  {{ post.excerpt | strip_html | strip_newlines | truncate: 170 }}
                 </p>
 
-                <a
-                    href="{{ post.url | relative_url }}"
-                    class="read-more">
-
-                    Continuar lendo →
-
+                <a href="{{ post.url | relative_url }}" class="post-card__more">
+                  Continuar lendo
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
 
-            </div>
+              </div>
 
-        </article>
+            </article>
 
-        {% endunless %}
-        {% endfor %}
+            {% endunless %}
+          {% endfor %}
 
-    </div>
+        </div>
+
+        <p class="posts-empty is-hidden" id="postsEmpty">
+          Nenhuma história com essa categoria — ainda. Volte em breve.
+        </p>
+
+      {% else %}
+
+        <div class="posts-empty">
+          <p>A primeira história está sendo escrita. Volte em breve.</p>
+        </div>
+
+      {% endif %}
+
+    {% else %}
+
+      <div class="posts-empty">
+        <p>A primeira história está sendo escrita. Volte em breve.</p>
+      </div>
+
+    {% endif %}
+
+  </div>
 
 </section>
+
+<script>
+(function () {
+  'use strict';
+
+  const filterBar = document.getElementById('postsFilter');
+  const grid      = document.getElementById('postsGrid');
+  const empty     = document.getElementById('postsEmpty');
+  if (!filterBar || !grid) return;
+
+  const cards = Array.from(grid.querySelectorAll('.post-card'));
+
+  // Monta botões de filtro a partir das categorias existentes
+  const categories = new Set();
+  cards.forEach(card => {
+    const cat = (card.dataset.category || '').trim();
+    if (cat) categories.add(cat);
+  });
+
+  categories.forEach(cat => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-btn';
+    btn.type = 'button';
+    btn.dataset.filter = cat;
+    btn.textContent = cat;
+    filterBar.appendChild(btn);
+  });
+
+  // Se não há nenhuma categoria, esconde a barra
+  if (categories.size === 0) filterBar.style.display = 'none';
+
+  // Filtro
+  filterBar.addEventListener('click', (e) => {
+    const btn = e.target.closest('.filter-btn');
+    if (!btn) return;
+
+    const filter = btn.dataset.filter;
+
+    filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('is-active'));
+    btn.classList.add('is-active');
+
+    let visibleCount = 0;
+    cards.forEach(card => {
+      const show = filter === '*' || card.dataset.category === filter;
+      card.style.display = show ? '' : 'none';
+      if (show) visibleCount++;
+    });
+
+    if (empty) empty.classList.toggle('is-hidden', visibleCount > 0);
+  });
+})();
+</script>
