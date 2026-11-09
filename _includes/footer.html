@@ -1,21 +1,52 @@
 <footer class="site-footer">
+  <div class="site-footer__inner">
 
-<div class="container">
+    <div class="site-footer__brand-col">
+      <a href="{{ '/' | relative_url }}" class="site-footer__brand">
+        <img src="{{ '/assets/img/logo_bg.png' | relative_url }}" alt="Sustaina Trip" />
+        <span>Sustaina Trip</span>
+      </a>
+      <p class="site-footer__tagline">
+        Tem viagens que a gente faz. E tem viagens que fazem a gente.
+        A gente organiza as segundas.
+      </p>
+    </div>
 
-<p>
+    <div>
+      <h4 class="site-footer__title">Navegue</h4>
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Início</a></li>
+        <li><a href="{{ '/' | relative_url }}#vivencias">Vivências</a></li>
+        <li><a href="{{ '/' | relative_url }}#transfer">Transfer</a></li>
+        <li><a href="{{ '/blog.html' | relative_url }}">Blog</a></li>
+      </ul>
+    </div>
 
-© {{ "now" | date: "%Y" }}
+    <div>
+      <h4 class="site-footer__title">Institucional</h4>
+      <ul>
+        <li><a href="{{ '/sobre.html' | relative_url }}">Sobre nós</a></li>
+        <li><a href="{{ '/termos.html' | relative_url }}">Termos &amp; Políticas</a></li>
+        <li><a href="https://wa.me/5548988742011" target="_blank" rel="noopener">Contato</a></li>
+      </ul>
+    </div>
 
-{{ site.title }}
+    <div class="site-footer__contact">
+      <h4 class="site-footer__title">Contato</h4>
+      <p><a href="mailto:contato@sustainatrip.com.br">contato@sustainatrip.com.br</a></p>
+      <p><a href="https://wa.me/5548988742011" target="_blank" rel="noopener">(48) 98874-2011</a></p>
+      <div class="site-footer__social">
+        <a href="https://www.instagram.com/sustainatrip.tur" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/5548988742011" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
 
-</p>
-
-<p>
-
-Turismo sustentável • Cultura • Natureza
-
-</p>
-
-</div>
-
+  </div>
+  <p class="site-footer__bottom">
+    © {{ 'now' | date: '%Y' }} Sustaina Trip Turismo — Feito na Ilha de Santa Catarina.
+  </p>
 </footer>
