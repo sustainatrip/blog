@@ -8,17 +8,6 @@ last_modified_at: 2026-11-22
 categories:
 
 - Florianópolis
-- Roteiros
-  tags:
-- Florianópolis
-- roteiro de viagem
-- o que fazer em Florianópolis
-- Ilha do Campeche
-- praias de Florianópolis
-- turismo em Santa Catarina
-  permalink: /blog/roteiro-florianopolis-5-dias/
-
----
 
 Florianópolis em 5 dias: roteiro completo para conhecer a Ilha
 
