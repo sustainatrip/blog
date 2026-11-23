@@ -1,58 +1,106 @@
-    {% if site.posts.size > 0 %}
+---
+layout: default
+title: Blog
+---
 
-      <div class="posts-filter" id="postsFilter" aria-label="Filtrar por categoria">
-        <button class="filter-btn is-active" data-filter="*" type="button">Todos</button>
-      </div>
+<section class="hero">
 
-      <div class="posts-grid" id="postsGrid">
+    <div class="hero-content">
+
+        <span class="hero-tag">
+            🌿 Bem-vindo ao Blog da SustainaTrip
+        </span>
+
+        <h1>
+            Descubra destinos que inspiram,
+            preservam e conectam pessoas.
+        </h1>
+
+        <p>
+            Histórias, cultura, ecoturismo, gastronomia e experiências
+            para explorar Florianópolis e outros destinos de forma
+            consciente e sustentável.
+        </p>
+
+        <a href="#artigos" class="btn-primary">
+            Explorar artigos
+        </a>
+
+    </div>
+
+</section>
+
+<section id="artigos" class="latest-posts">
+
+    <div class="section-header">
+
+        <h2>Últimos artigos</h2>
+
+        <p>
+            Conteúdos sobre turismo sustentável, cultura,
+            natureza e experiências autênticas.
+        </p>
+
+    </div>
+
+    <div class="posts-grid">
 
         {% for post in site.posts %}
-          {% unless post.path contains "en/_posts" %}
+        {% unless post.path contains "en/_posts" %}
 
-          <article class="post-card"
-            data-category="{% if post.categories and post.categories.size > 0 %}{{ post.categories.first }}{% endif %}">
+        <article class="card">
 
             {% if post.image %}
-            <a href="{{ post.url | relative_url }}" class="post-card__media" aria-label="Ler: {{ post.title }}">
-              <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy"
-                onerror="this.style.display='none'; this.parentElement.classList.add('post-card__media--empty');" />
+            <a href="{{ post.url | relative_url }}">
+                <img
+                    src="{{ post.image | relative_url }}"
+                    alt="{{ post.title }}">
             </a>
             {% endif %}
 
-            <div class="post-card__body">
-              {% if post.categories and post.categories.size > 0 %}
-              <span class="post-card__tag">{{ post.categories.first }}</span>
-              {% endif %}
-              <h3 class="post-card__title">
-                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-              </h3>
-              <time class="post-card__date" datetime="{{ post.date | date_to_xmlschema }}">
-                {{ post.date | date: "%d de %B de %Y" }}
-              </time>
-              <p class="post-card__excerpt">
-                {{ post.excerpt | strip_html | strip_newlines | truncate: 170 }}
-              </p>
-              <a href="{{ post.url | relative_url }}" class="post-card__more">
-                Continuar lendo
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+            <div class="card-content">
+
+                {% if post.categories and post.categories.size > 0 %}
+                <span class="badge">
+                    {{ post.categories.first }}
+                </span>
+                {% endif %}
+
+                <h3>
+
+                    <a href="{{ post.url | relative_url }}">
+                        {{ post.title }}
+                    </a>
+
+                </h3>
+
+                <small>
+                    {{ post.date | date: "%d de %B de %Y" }}
+                </small>
+
+                <p>
+
+                    {{ post.excerpt
+                        | strip_html
+                        | truncate: 170 }}
+
+                </p>
+
+                <a
+                    href="{{ post.url | relative_url }}"
+                    class="read-more">
+
+                    Continuar lendo →
+
+                </a>
+
             </div>
 
-          </article>
+        </article>
 
-          {% endunless %}
+        {% endunless %}
         {% endfor %}
 
-      </div>
+    </div>
 
-      <p class="posts-empty is-hidden" id="postsEmpty">
-        Nenhuma história com essa categoria — ainda. Volte em breve.
-      </p>
-
-    {% else %}
-
-      <div class="posts-empty">
-        <p>A primeira história está sendo escrita. Volte em breve.</p>
-      </div>
-
-    {% endif %}
+</section>
