@@ -5,11 +5,12 @@ title: "Florianópolis em 5 dias: roteiro completo para conhecer a Ilha"
 description: "Vai passar 5 dias em Florianópolis? Confira um roteiro por regiões com praias, natureza, cultura açoriana, Ilha do Campeche e dicas para aproveitar melhor a viagem."
 date: 2026-11-22
 last_modified_at: 2026-11-22
+author: SustainaTrip
+
 categories:
 
 - Florianópolis
 - Roteiros
-  tags:
 - Florianópolis
 - roteiro de viagem
 - o que fazer em Florianópolis
@@ -18,6 +19,7 @@ categories:
 - turismo em Santa Catarina
   permalink: /blog/roteiro-florianopolis-5-dias/
 
+image: https://raw.githubusercontent.com/sustainatrip/blog/refs/heads/main/images/7-destinos-ecoturismo.png
 ---
 
 Florianópolis em 5 dias: roteiro completo para conhecer a Ilha
