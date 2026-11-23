@@ -41,80 +41,68 @@ description: "Histórias, pessoas, comida, mar. O que a gente encontra quando sa
 
     {% if site.posts.size > 0 %}
 
-      {% assign visible_posts = site.posts | "where_exp": "post", "post.path contains 'en/_posts' == false" %}
+      <div class="posts-filter" id="postsFilter" aria-label="Filtrar por categoria">
+        <button class="filter-btn is-active" data-filter="*" type="button">Todos</button>
+      </div>
 
-      {% if visible_posts.size > 0 %}
+      <div class="posts-grid" id="postsGrid">
 
-        <div class="posts-filter" id="postsFilter" aria-label="Filtrar por categoria">
-          <button class="filter-btn is-active" data-filter="*" type="button">Todos</button>
-        </div>
+        {% for post in site.posts %}
+          {% unless post.path contains "en/_posts" %}
 
-        <div class="posts-grid" id="postsGrid">
+          <article
+            class="post-card"
+            data-category="{% if post.categories and post.categories.size > 0 %}{{ post.categories.first }}{% endif %}"
+          >
 
-          {% for post in site.posts %}
-            {% unless post.path contains "en/_posts" %}
+            {% if post.image %}
+            <a href="{{ post.url | relative_url }}" class="post-card__media" aria-label="Ler: {{ post.title }}">
+              <img
+                src="{{ post.image | relative_url }}"
+                alt="{{ post.title }}"
+                loading="lazy"
+                onerror="this.style.display='none'; this.parentElement.classList.add('post-card__media--empty');"
+              />
+            </a>
+            {% endif %}
 
-            <article
-              class="post-card"
-              data-category="{% if post.categories and post.categories.size > 0 %}{{ post.categories.first }}{% endif %}"
-            >
+            <div class="post-card__body">
 
-              {% if post.image %}
-              <a href="{{ post.url | relative_url }}" class="post-card__media" aria-label="Ler: {{ post.title }}">
-                <img
-                  src="{{ post.image | relative_url }}"
-                  alt="{{ post.title }}"
-                  loading="lazy"
-                  onerror="this.style.display='none'; this.parentElement.classList.add('post-card__media--empty');"
-                />
-              </a>
+              {% if post.categories and post.categories.size > 0 %}
+              <span class="post-card__tag">
+                {{ post.categories.first }}
+              </span>
               {% endif %}
 
-              <div class="post-card__body">
+              <h3 class="post-card__title">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </h3>
 
-                {% if post.categories and post.categories.size > 0 %}
-                <span class="post-card__tag">
-                  {{ post.categories.first }}
-                </span>
-                {% endif %}
+              <time class="post-card__date" datetime="{{ post.date | date_to_xmlschema }}">
+                {{ post.date | date: "%d de %B de %Y" }}
+              </time>
 
-                <h3 class="post-card__title">
-                  <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                </h3>
+              <p class="post-card__excerpt">
+                {{ post.excerpt | strip_html | strip_newlines | truncate: 170 }}
+              </p>
 
-                <time class="post-card__date" datetime="{{ post.date | date_to_xmlschema }}">
-                  {{ post.date | date: "%d de %B de %Y" }}
-                </time>
+              <a href="{{ post.url | relative_url }}" class="post-card__more">
+                Continuar lendo
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
 
-                <p class="post-card__excerpt">
-                  {{ post.excerpt | strip_html | strip_newlines | truncate: 170 }}
-                </p>
+            </div>
 
-                <a href="{{ post.url | relative_url }}" class="post-card__more">
-                  Continuar lendo
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
+          </article>
 
-              </div>
+          {% endunless %}
+        {% endfor %}
 
-            </article>
+      </div>
 
-            {% endunless %}
-          {% endfor %}
-
-        </div>
-
-        <p class="posts-empty is-hidden" id="postsEmpty">
-          Nenhuma história com essa categoria — ainda. Volte em breve.
-        </p>
-
-      {% else %}
-
-        <div class="posts-empty">
-          <p>A primeira história está sendo escrita. Volte em breve.</p>
-        </div>
-
-      {% endif %}
+      <p class="posts-empty is-hidden" id="postsEmpty">
+        Nenhuma história com essa categoria — ainda. Volte em breve.
+      </p>
 
     {% else %}
 
