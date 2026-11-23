@@ -41,7 +41,7 @@ description: "Histórias, pessoas, comida, mar. O que a gente encontra quando sa
 
     {% if site.posts.size > 0 %}
 
-      {% assign visible_posts = site.posts | where_exp: "post", "post.path contains 'en/_posts' == false" %}
+      {% assign visible_posts = site.posts | "where_exp": "post", "post.path contains 'en/_posts' == false" %}
 
       {% if visible_posts.size > 0 %}
 
